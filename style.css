@@ -1,21 +1,57 @@
 *{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto,  sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .Heading{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
-    height: 28px;
+    height: 45px;
     width: 100%;
     padding: 10px 20px;
     /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); */
 
 }
+.Heading-left{
+    height: 100%;
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 95px;
+    gap: 10px;
+
+}
+.Heading-left input{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 10px;
+    font-weight: 200;
+}
+.input{
+    height: 15px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.Heading-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 95px;
+    gap: 30px;
+}
+.Heading-right p{
+    font-size: 14px;
+}
 
 .sign-in{
     color: rgb(255,255,255);
     background-color: rgb(248, 68, 100);
-    font-size: 12px;
+    font-size: 14px;
     height: 25px;
     line-height: 25px;
     width: 67px;
@@ -25,10 +61,57 @@
     display: block;
     
 }
-.input{
-    height: 25px;
-    width: 400px;
+
+.nav-bar{
+    color: black;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap ;
+    font-weight: 400;
+    width: 100%;
+    height: 40px;
+    padding:0px;
+    background-color: rgb(245,245,245);
+    
+
+}
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 15px; 
+    transition: 0.3s;
+}
+
+.nav-bar-left,
+.nav-bar-right{
+    display: flex;
+    gap: 20px;
+}
+.nav-bar-left{
+    white-space: nowrap;
+    justify-content: flex-start;
+    padding-left: 0px;
+}
+.nav-bar-right{
+    padding-right: 55px;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0px 40px;
+    font-size: 14px;
+    padding: 5px 15px;
+    transition: 0.3s;
+    
+}
+.movie-content{
+    height: 475px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
