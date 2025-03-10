@@ -29,6 +29,7 @@
     padding: 10px 10px;
     font-weight: 200;
 }
+
 .input{
     height: 15px;
     width: 900px;
@@ -67,23 +68,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap:wrap ;
+    flex-wrap: wrap ;
     font-weight: 400;
     width: 100%;
-    height: 40px;
-    padding:0px;
+    height:35px;
     background-color: rgb(245,245,245);
     
 
 }
-.nav-bar a {
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 5px 15px; 
-    transition: 0.3s;
-}
+
 
 .nav-bar-left,
 .nav-bar-right{
@@ -93,25 +86,41 @@
 .nav-bar-left{
     white-space: nowrap;
     justify-content: flex-start;
-    padding-left: 0px;
+    padding-left: 105px;
 }
 .nav-bar-right{
-    padding-right: 55px;
+    padding-right: 60px;
 }
 .nav-bar a{
     text-decoration: none;
     color: black;
-    font-size: 14px;
-    font-weight: 300;
-    padding: 0px 40px;
-    font-size: 14px;
-    padding: 5px 15px;
+    font-weight: 200;
+    font-size: 13px;
     transition: 0.3s;
     
 }
 .movie-content{
+    position: relative;
     height: 475px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
+}
+.movie-content::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%; 
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 5), rgba(0, 0, 0, 0)); 
+    z-index: 1; 
+}
+
+.movie-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative; 
+    z-index: 0;
 }
